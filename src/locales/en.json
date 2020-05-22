@@ -1,0 +1,12 @@
+{
+	"#":"#",
+	"Position": "Position",
+	"Company": "Company",
+	"Salary": "Salary",
+	"SalaryUnitOne":"million",
+	"SalaryUnitOthers":"millions",
+	"City": "City",
+	"PulibicationDate": "PulibicationDate",
+	"Views": "Views",
+	"BackgroundTableHeader": "thead-dark"
+}

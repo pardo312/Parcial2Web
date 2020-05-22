@@ -1,0 +1,12 @@
+{
+	"#":"#",
+	"Position": "Nombre del cargo",
+	"Company": "Empresa",
+	"Salary": "Salario",
+	"SalaryUnitOne":"million",
+	"SalaryUnitOthers":"milliones",
+	"City": "Ciudad",
+	"PulibicationDate": "Fecha de publicación",
+	"Views": "Visitas",
+	"BackgroundTableHeader": "thead-light"
+}
