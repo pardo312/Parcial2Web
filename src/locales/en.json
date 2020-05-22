@@ -1,12 +1,3 @@
 {
-	"#":"#",
-	"Position": "Position",
-	"Company": "Company",
-	"Salary": "Salary",
-	"SalaryUnitOne":"million",
-	"SalaryUnitOthers":"millions",
-	"City": "City",
-	"PulibicationDate": "PulibicationDate",
-	"Views": "Views",
-	"BackgroundTableHeader": "thead-dark"
+	"url":"https://gist.githubusercontent.com/josejbocanegra/8b436480129d2cb8d81196050d48556/raw/48cc65480675bf8b144d89ecb8bcd663b05e1db0/data-en.json"
 }
