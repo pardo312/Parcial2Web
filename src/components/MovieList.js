@@ -6,12 +6,15 @@ export default class MovieList extends React.Component {
 
   constructor(props) {
     super(props);
+    
     this.state = {
       json: []
+      
     };
   }
 
   componentDidMount() {
+    
     fetch("https://gist.githubusercontent.com/josejbocanegra/f784b189117d214578ac2358eb0a01d7/raw/2b22960c3f203bdf4fac44cc7e3849689218b8c0/data-es.json")
       .then(response => {
         return response.json();
@@ -21,7 +24,12 @@ export default class MovieList extends React.Component {
         this.drawChart(data)
       });
 
+  
   }
+  showDetail(show,detalle) {
+    this.setState({ showDetail : show,detail:detalle} );
+  }
+
   drawChart(data) {
 
     const canvas = d3.select(this.refs.canvas);
@@ -72,7 +80,9 @@ export default class MovieList extends React.Component {
     console.log(this.state.json);
     return (
       <div>
-        <table className="table">
+        <div className="row">
+          <div className="col-md-6">
+          <table className="table">
           <FormattedMessage id='BackgroundTableHeader' children={msg =>
             <thead className={msg}>
               <tr>
@@ -90,7 +100,12 @@ export default class MovieList extends React.Component {
             {this.state.json.map((e, i) => <Movie key={i} offer={e} />)}
           </tbody>
         </table>
+        
         <div ref="canvas" style={{marginTop:"7rem"}}></div> 
+          </div>
+          
+        </div>
+        
       </div>
     );
   }
